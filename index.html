@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            padding: 10px;
+            display: flex;
+        }
+        .box {
+            /* flex-grow: 1; */
+            flex-basis: 25%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #c5c0c0;
+            box-shadow: 0px 0px 12px 0px #c7c5c5;
+            background-color: white;
+            /* margin: 2px; */
+        }
+        .dua{
+            /* flex-grow: 2; */
+            flex-basis: 50%;
+        }
 
+        @media only screen and (max-width: 600px) {
+            .container{display: block;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+
+    <div class="container">
+        <div class="box satu">1</div>
+        <div class="box dua">2</div>
+        <div class="box tiga">3</div>
+    </div>
+</body>
+</html>
